@@ -82,7 +82,7 @@ def challenge_page():
     if past_responses:
         for resp in past_responses[::-1]:
             with st.expander(f"📅 {resp['date']} - {resp['challenge']}"):
-                st.markdown(f"<div style='background-color: #f9f9f9; padding: 15px; border-radius: 10px; font-size: 16px;'>{resp['response']}</div>", unsafe_allow_html=True)
+                st.markdown(f"<div style='background-color: #3A3D36; padding: 15px; border-radius: 10px; font-size: 16px;'>{resp['response']}</div>", unsafe_allow_html=True)
     else:
         st.info("No past reflections yet. Start your journey today! 🚀")
     
